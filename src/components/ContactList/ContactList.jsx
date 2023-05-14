@@ -1,6 +1,7 @@
-import styles from './ContactList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redux/contactSlice';
+
+import styles from './ContactList.module.css';
 
 export const ContactList = () => {
   const dispatch = useDispatch();
@@ -9,6 +10,7 @@ export const ContactList = () => {
       item.name.toLowerCase().trim().includes(state.filter.toLowerCase().trim())
     );
   });
+
   return (
     <>
       <ul>
@@ -21,7 +23,7 @@ export const ContactList = () => {
               type="button"
               onClick={() => dispatch(deleteContact(item.id))}
             >
-              Delete
+              X
             </button>
           </li>
         ))}
