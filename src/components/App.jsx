@@ -1,8 +1,10 @@
 import { useSelector } from 'react-redux';
-import styles from './App.module.css';
+
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
+
+import styles from './App.module.css';
 
 export const App = () => {
   const users = useSelector(state => state.contacts.items);
