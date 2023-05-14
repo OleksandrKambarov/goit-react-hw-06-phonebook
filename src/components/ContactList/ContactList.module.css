@@ -1,20 +1,17 @@
-.contactUser {
+.contactList {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 10px;
   align-items: center;
 }
 
-.contactUser button {
+.contactList button {
   color: black;
   border-radius: 50%;
   cursor: pointer;
-
-  padding-left: 10px;
   transition: all 250ms ease-in-out;
-  outline: none;
   border: 1px solid transparent;
-  padding: 14px;
+  padding: 8px;
 }
 
 button:hover {

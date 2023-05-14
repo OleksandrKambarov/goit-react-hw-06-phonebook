@@ -15,7 +15,7 @@ export const ContactList = () => {
     <>
       <ul>
         {contacts.map(item => (
-          <li key={item.id} className={styles.contactUser}>
+          <li key={item.id} className={styles.contactList}>
             <p className={styles.user}>
               <b>{item.name}</b> {item.number}
             </p>
