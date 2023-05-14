@@ -1,10 +1,10 @@
-import { useDispatch } from "react-redux";
-import { filterContact } from "../../redux/actions";
+import { useDispatch } from 'react-redux';
+import { filterContact } from '../../redux/actions';
 
 const Filter = () => {
   const dispatch = useDispatch();
 
-  const onFilter = (event) => dispatch(filterContact(event.target.value));
+  const onFilter = event => dispatch(filterContact(event.target.value));
 
   return (
     <label>
