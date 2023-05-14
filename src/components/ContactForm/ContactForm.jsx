@@ -37,7 +37,7 @@ export const ContactForm = () => {
       <label>
         <input
           className={styles.form__label}
-          placeholder="Phone number"
+          placeholder="Phone number   + XX (YYY) XXX XX XX"
           type="tel"
           name="number"
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
