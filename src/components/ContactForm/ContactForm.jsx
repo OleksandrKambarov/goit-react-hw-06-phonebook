@@ -15,6 +15,7 @@ export const ContactForm = () => {
       name: e.target.elements.name.value,
       number: e.target.elements.number.value,
     };
+
     dispatch(addContact(newObj));
 
     e.target.reset();
