@@ -1,20 +1,10 @@
-.container {
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
 .form {
   display: flex;
   gap: 32px;
   flex-wrap: nowrap;
 }
 
-input,
-label {
-  width: 100%;
-}
-
-.inputField {
+.form__label {
   height: 50px;
   background: #ecf0f3;
   border: 1px solid transparent;
@@ -39,5 +29,15 @@ label {
 }
 
 .form__button:hover {
-  background: #a8e97d;
+  background: #127e1b;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+input,
+label {
+  width: 100%;
 }

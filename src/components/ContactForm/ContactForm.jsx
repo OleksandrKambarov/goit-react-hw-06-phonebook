@@ -24,7 +24,7 @@ export const ContactForm = () => {
     <form onSubmit={handleSubmit} className={styles.form}>
       <label>
         <input
-          className={styles.inputField}
+          className={styles.form__label}
           placeholder="Name"
           type="text"
           name="name"
@@ -36,7 +36,7 @@ export const ContactForm = () => {
 
       <label>
         <input
-          className={styles.inputField}
+          className={styles.form__label}
           placeholder="Phone number"
           type="tel"
           name="number"
