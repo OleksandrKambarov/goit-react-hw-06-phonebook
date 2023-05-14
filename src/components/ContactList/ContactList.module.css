@@ -1,7 +1,7 @@
 .contactList {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
+  margin-right: auto;
   padding-bottom: 10px;
   align-items: center;
 }
