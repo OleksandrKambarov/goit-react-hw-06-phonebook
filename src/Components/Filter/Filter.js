@@ -13,6 +13,7 @@ const Filter = () => {
       <input
         type="text"
         name="filter"
+        placeholder="Search"
         onChange={onFilter}
         className={s.search}
       />

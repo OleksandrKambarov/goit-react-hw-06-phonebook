@@ -4,11 +4,11 @@ import Filter from './Components/Filter';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <h1>Phonebook</h1>
       <ContactForm />
       <h2>Contacts</h2>
-      <p className="App-find">Find contacts by name</p>
+      <p>Find contacts by name</p>
       <Filter />
       <ContactList />
     </div>

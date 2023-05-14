@@ -29,7 +29,7 @@ const ContactList = () => {
             <td>{number}</td>
             <td>
               <button type="button" onClick={() => onDeleteContact(id)}>
-                x
+                X
               </button>
             </td>
           </tr>

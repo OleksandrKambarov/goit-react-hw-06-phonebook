@@ -63,7 +63,9 @@ function ContactForm() {
           onChange={handleInputChange}
         />
       </label>
-      <button type="submit">Add contact</button>
+      <button className={s.form__button} type="submit">
+        Add contact
+      </button>
     </form>
   );
 }
