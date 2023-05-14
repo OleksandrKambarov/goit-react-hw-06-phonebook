@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../../redux/actions';
+
 import s from './ContactForm.module.css';
 
 function ContactForm() {
   const dispatch = useDispatch();
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
+
   const handleInputChange = e => {
     const { name, value } = e.currentTarget;
 
@@ -21,6 +23,7 @@ function ContactForm() {
         return;
     }
   };
+
   const handleSubmit = e => {
     e.preventDefault();
     if (name.trim() === '' || number.trim() === '') {

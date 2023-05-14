@@ -1,14 +1,28 @@
 .ListTable {
-  margin: 15px;
-  width: 350px;
-  border-collapse: collapse;
+  margin: 10px;
 }
-.ListTable td {
-  padding: 5px;
+
+.ListTable td button {
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(245, 183, 183);
+  border-radius: 50%;
 }
+
+.ListTable tr {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
 .ListTable tr:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+
 .ListTable tr:hover {
-  background-color: rgb(161, 231, 243);
+  background-color: rgb(176, 243, 229);
 }
