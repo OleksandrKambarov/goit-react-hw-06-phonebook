@@ -1,6 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { filterContact } from '../../redux/actions';
 
+import s from './Filter.module.css';
+
 const Filter = () => {
   const dispatch = useDispatch();
 
@@ -8,7 +10,12 @@ const Filter = () => {
 
   return (
     <label>
-      <input type="text" name="filter" onChange={onFilter} />
+      <input
+        type="text"
+        name="filter"
+        onChange={onFilter}
+        className={s.search}
+      />
     </label>
   );
 };
