@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 import styles from './ContactForm.module.css';
 
 export const ContactForm = () => {
+  const contacts = useSelector(state => state.contacts.items);
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
