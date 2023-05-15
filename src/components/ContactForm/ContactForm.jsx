@@ -3,7 +3,6 @@ import { nanoid } from 'nanoid';
 import { useDispatch } from 'react-redux';
 import { addContact } from 'redux/contactSlice';
 import { useSelector } from 'react-redux';
-// import { toast } from 'react-toastify';
 
 import styles from './ContactForm.module.css';
 
@@ -20,9 +19,9 @@ export const ContactForm = () => {
       number: e.target.elements.number.value,
     };
 
-    contacts.find(i => i.name.toLowerCase() === newObj.name.toLowerCase())
-      ? alert(`${newObj.name} is already in contacts`)
-      : dispatch(addContact(newObj));
+    if (contacts.find(i => i.name.toLowerCase() === newObj.name.toLowerCase()))
+      return alert(`${newObj.name} is already in contacts`);
+    dispatch(addContact(newObj));
     e.target.reset();
   };
 
