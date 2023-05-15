@@ -2,6 +2,7 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import { useDispatch } from 'react-redux';
 import { addContact } from 'redux/contactSlice';
+// import { toast } from 'react-toastify';
 
 import styles from './ContactForm.module.css';
 
@@ -18,7 +19,6 @@ export const ContactForm = () => {
     };
 
     dispatch(addContact(newObj));
-
     e.target.reset();
   };
 
